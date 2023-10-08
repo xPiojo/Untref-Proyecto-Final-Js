@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Función para cargar la información del producto desde el archivo JSON
 function cargarProducto(productId) {
-  fetch("https://xpiojo.github.io/trabajo-integrador-js/productos.json")
+  fetch("https://xpiojo.github.io/Untref-Proyecto-Final-Js/productos.json")
     .then((response) => response.json())
     .then((data) => {
       const productoSeleccionado = data.find((producto) => producto.id === productId);
@@ -52,7 +52,7 @@ function cargarInfoProducto(producto) {
 
 // Función para comprar un producto
 function comprarProducto(productId) {
-  fetch("/productos.json")
+  fetch("https://xpiojo.github.io/Untref-Proyecto-Final-Js/productos.json")
     .then((response) => response.json())
     .then((data) => {
       const productoSeleccionado = data.find((producto) => producto.id === productId);
